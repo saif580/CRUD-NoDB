@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit the Comment</title>
+</head>
+<body>
+    <h1>Edit Comment Page</h1>
+    <form action="/comments/<%= comment1.id %>?_method=PATCH " method="post">
+        <label for="Username">Username:-</label><input type="text" name="uesrname" value="<%= comment1.username %> "><br><br>
+        <label for="Comment">Comment:-</label><input type="text" name="comment" value="<%= comment1.comment %> " id="">
+        <button>submit</button>
+    </form>
+    <a href="/comments">Back To Index Page</a>
+
+</body>
+</html>
